@@ -3,9 +3,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Controller {
+public class ExampleController {
+
     @RequestMapping(value = "/getName", method = RequestMethod.GET)
-    public String getString(){
-        return "My Name Is Sujan";
+    public String findName() {
+        return "kousik";
     }
 }
